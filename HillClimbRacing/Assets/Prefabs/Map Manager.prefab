@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7660981953300703446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7660981953300703432}
+  - component: {fileID: 7660981953300703435}
+  - component: {fileID: 7660981953300703434}
+  - component: {fileID: 2096764426106503818}
+  m_Layer: 0
+  m_Name: Map Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7660981953300703432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660981953300703446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 246.14052, y: -555.80237, z: -28.5121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7660981953300703435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660981953300703446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b157fba0ea39b41b0c2df43dbc3ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefabs:
+  - {fileID: 458905156059978741, guid: 60d01e8f57915314f8cd596215bbe1f6, type: 3}
+  - {fileID: 4335731402891130542, guid: 1116c90466350c24f945abf913a7dbc1, type: 3}
+  - {fileID: 5855415624785903298, guid: 138de2c98c0259a49ad50e7a3773a845, type: 3}
+  - {fileID: 458905156059978741, guid: 0768d22356a052c43a24eaaa96ab7659, type: 3}
+  - {fileID: 6796818764787611964, guid: 2781074f551c6234f9664dbb1a956d6e, type: 3}
+  carStartPos: {fileID: 0}
+  mapBackgroundSprite: {fileID: 21300000, guid: 4138578c93bd7004a975d322cd7f24b8, type: 3}
+  mapBoundary: -5
+  pauseMenu: {fileID: 0}
+--- !u!114 &7660981953300703434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660981953300703446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe0f3d204d053642ab7bde62895c05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 0}
+  currentCoins: 0
+--- !u!114 &2096764426106503818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660981953300703446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eae98f9630751f42b31b9b477af9a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  highScore: 0
+  scoreMultiplier: 300
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  distance: 3
+  carController: {fileID: 0}
